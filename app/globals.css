@@ -1,0 +1,82 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: radial-gradient(circle at top, #1a0b2e 0%, #0a0a0f 100%);
+  color: #e5e5e5;
+  font-family: system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb {
+  background: #d4af37;
+  border-radius: 4px;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+.glass-card:hover {
+  border-color: rgba(212, 175, 55, 0.3);
+  box-shadow: 0 8px 40px rgba(212, 175, 55, 0.15);
+}
+
+.gold-text {
+  background: linear-gradient(135deg, #f5d76e 0%, #d4af37 50%, #b8860b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gold-glow {
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.6);
+}
+
+.gold-btn {
+  background: linear-gradient(135deg, #d4af37 0%, #b8860b 100%);
+  color: #0a0a0f;
+  transition: all 0.3s ease;
+  border: none;
+}
+.gold-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
+}
+
+.purple-btn {
+  background: linear-gradient(135deg, #7c3aed 0%, #4c1d95 100%);
+  color: white;
+  transition: all 0.3s ease;
+  border: none;
+}
+.purple-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(124, 58, 237, 0.5);
+}
+
+.input-dark {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 10px;
+  padding: 10px 14px;
+  color: #e5e5e5;
+  outline: none;
+  transition: border 0.3s;
+}
+.input-dark:focus {
+  border-color: #d4af37;
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+}
